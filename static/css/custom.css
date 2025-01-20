@@ -1,0 +1,234 @@
+/* Navbar Styles */
+.navbar {
+    background-color: transparent;
+    transition: all 0.3s ease;
+    padding: 1.5rem 0;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section Styles */
+.banner_w3lspvt {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.slide-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide-image.active {
+    opacity: 1;
+}
+
+.w3layouts-banner-info {
+    text-align: center;
+    padding: 0 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.section_title {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Search Form Styles */
+.property-search {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-wrap {
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+}
+
+.input-wrap input {
+    width: 100%;
+    padding: 0.8rem 2.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-wrap input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.searchIcon,
+.right-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.searchIcon {
+    left: 1rem;
+}
+
+.right-icon {
+    right: 1rem;
+}
+
+.btn-wrap {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.search-submit-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-submit-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Guest Selector Styles */
+.auto-guest-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.guestWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.wrap-guest-input {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.auto-guest-nav {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guestCount {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.wrap-guest {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section_title {
+        font-size: 2.5rem;
+    }
+
+    .property-search {
+        flex-direction: column;
+    }
+
+    .input-wrap {
+        width: 100%;
+    }
+}
+
+/* Overlay for Hero Section */
+.banner_w3lspvt::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+/* Datepicker customization */
+.datepicker-input {
+    cursor: pointer;
+}

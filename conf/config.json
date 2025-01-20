@@ -1,0 +1,14 @@
+{
+  "site_name": "Elysian Escapes",
+  "primary_color": "#283655",
+  "secondary_color": "#A9A9A9",
+  "accent_color": "#F2E9E1",
+  "logo_position": "left",
+  "search_bar_position": "right",
+  "hero_image": "https://unsplash.com/photos/K6_e5-s7H-g",
+  "slider_images": [
+    "https://unsplash.com/photos/e-f4_k9u_0E",
+    "https://unsplash.com/photos/8m-XhWq8g0c",
+    "https://unsplash.com/photos/mO7k_a_tF68"
+  ]
+}
